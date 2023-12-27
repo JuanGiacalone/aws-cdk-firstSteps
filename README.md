@@ -62,4 +62,54 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
+ ---
+ PERSONAL NOTES
+
+```
+ .\source.bat
+```
+Runs the virtual enviroment for you.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sts:AssumeRole"
+            ],
+            "Resource": [
+                "arn:aws:iam::*:role/cdk-*"
+            ]
+        }
+    ]
+}
+```
+
+```
+cdk bootstrap --show-template > bootstrap-template.yaml
+https://d-9067f17090.awsapps.com/start
+_GW24pS5&$1t?gtgnA
+aws s3 ls --profile CloudFormationALL-678953334306
+cdk bootstrap --profile CloudFormationALL-678953334306
+```
+
+```
+cdk bootstrap - its used when first declaring a Stack
+
+cdk diff - shows differences with local setup and actual remote
+
+cdk deploy - deploys the changes to the remote stack
+
+$ # Deploys only to environments foo and bar
+$ cdk bootstrap --app='' foo bar
+```
+
+IAMFullAccess	AWS managed	Provides full access to IAM via the AWS Management Console.
+AWSCloudFormationFullAccess	AWS managed	Provides full access to AWS CloudFormation.
+AmazonSSMFullAccess	AWS managed	Provides full access to Amazon SSM.
+AmazonS3FullAccess	AWS managed	Provides full access to all buckets via the AWS Management Console.
+AmazonEC2ContainerRegistryFullAccess	AWS managed	Provides administrative access to Amazon ECR resources
+
 Enjoy!
