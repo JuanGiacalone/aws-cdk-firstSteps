@@ -90,7 +90,7 @@ Runs the virtual enviroment for you.
 ```
 cdk bootstrap --show-template > bootstrap-template.yaml
 https://d-9067f17090.awsapps.com/start
-_GW24pS5&$1t?gtgnA
+
 aws s3 ls --profile CloudFormationALL-678953334306
 cdk bootstrap --profile CloudFormationALL-678953334306
 ```
